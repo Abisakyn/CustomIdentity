@@ -55,7 +55,7 @@ namespace CustomIdentity.Controllers
 
                 if (result.Succeeded)
                 {
-                    await signInManager.SignInAsync(user,false);
+                    //await signInManager.SignInAsync(user,false);
 					return RedirectToAction("Index", "Home");
 				}
                 foreach(var error in result.Errors)
